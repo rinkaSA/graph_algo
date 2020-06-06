@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e145c0c3-9e56-4a05-ad6e-91110c6a0e60" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XtoDQrR2szVS4cal1wMMvKUPxH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Python.graph_class">
+    <configuration name="р" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/р.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="astar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/astar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="biastar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/biastar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bidijkstra" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bidijkstra.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="graph_class" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph_class.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.graph_class" />
+        <item itemvalue="Python.biastar" />
+        <item itemvalue="Python.р" />
+        <item itemvalue="Python.astar" />
+        <item itemvalue="Python.bidijkstra" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e145c0c3-9e56-4a05-ad6e-91110c6a0e60" name="Default Changelist" comment="" />
+      <created>1581874632719</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581874632719</updated>
+      <workItem from="1581874646505" duration="4627000" />
+      <workItem from="1581879745544" duration="4852000" />
+      <workItem from="1582711371837" duration="34122000" />
+      <workItem from="1583165496643" duration="40269000" />
+      <workItem from="1585395681889" duration="23178000" />
+      <workItem from="1591435132846" duration="992000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1638" height="403" key="GridCell.Tab.0.bottom" timestamp="1591435581344">
+      <screen x="0" y="23" width="1680" height="941" />
+    </state>
+    <state width="1638" height="403" key="GridCell.Tab.0.bottom/0.23.1680.941@0.23.1680.941" timestamp="1591435581344" />
+    <state width="1638" height="39" key="GridCell.Tab.0.bottom/0.23.1680.944@0.23.1680.944" timestamp="1585578267533" />
+    <state width="1638" height="168" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1585477086519" />
+    <state width="1638" height="165" key="GridCell.Tab.0.bottom/0.23.1680.949@0.23.1680.949" timestamp="1583257558851" />
+    <state width="1638" height="165" key="GridCell.Tab.0.bottom/0.23.1680.952@0.23.1680.952" timestamp="1583251522713" />
+    <state width="1638" height="165" key="GridCell.Tab.0.bottom/0.23.1680.956@0.23.1680.956" timestamp="1583330032173" />
+    <state width="1638" height="165" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1583361341770" />
+    <state width="1638" height="403" key="GridCell.Tab.0.center" timestamp="1591435581343">
+      <screen x="0" y="23" width="1680" height="941" />
+    </state>
+    <state width="1638" height="403" key="GridCell.Tab.0.center/0.23.1680.941@0.23.1680.941" timestamp="1591435581343" />
+    <state width="1638" height="39" key="GridCell.Tab.0.center/0.23.1680.944@0.23.1680.944" timestamp="1585578267532" />
+    <state width="1638" height="168" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1585477086518" />
+    <state width="1638" height="165" key="GridCell.Tab.0.center/0.23.1680.949@0.23.1680.949" timestamp="1583257558851" />
+    <state width="1638" height="165" key="GridCell.Tab.0.center/0.23.1680.952@0.23.1680.952" timestamp="1583251522712" />
+    <state width="1638" height="165" key="GridCell.Tab.0.center/0.23.1680.956@0.23.1680.956" timestamp="1583330032172" />
+    <state width="1638" height="165" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1583361341769" />
+    <state width="1638" height="403" key="GridCell.Tab.0.left" timestamp="1591435581342">
+      <screen x="0" y="23" width="1680" height="941" />
+    </state>
+    <state width="1638" height="403" key="GridCell.Tab.0.left/0.23.1680.941@0.23.1680.941" timestamp="1591435581342" />
+    <state width="1638" height="39" key="GridCell.Tab.0.left/0.23.1680.944@0.23.1680.944" timestamp="1585578267531" />
+    <state width="1638" height="168" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1585477086517" />
+    <state width="1638" height="165" key="GridCell.Tab.0.left/0.23.1680.949@0.23.1680.949" timestamp="1583257558850" />
+    <state width="1638" height="165" key="GridCell.Tab.0.left/0.23.1680.952@0.23.1680.952" timestamp="1583251522711" />
+    <state width="1638" height="165" key="GridCell.Tab.0.left/0.23.1680.956@0.23.1680.956" timestamp="1583330032172" />
+    <state width="1638" height="165" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1583361341769" />
+    <state width="1638" height="403" key="GridCell.Tab.0.right" timestamp="1591435581343">
+      <screen x="0" y="23" width="1680" height="941" />
+    </state>
+    <state width="1638" height="403" key="GridCell.Tab.0.right/0.23.1680.941@0.23.1680.941" timestamp="1591435581343" />
+    <state width="1638" height="39" key="GridCell.Tab.0.right/0.23.1680.944@0.23.1680.944" timestamp="1585578267532" />
+    <state width="1638" height="168" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1585477086518" />
+    <state width="1638" height="165" key="GridCell.Tab.0.right/0.23.1680.949@0.23.1680.949" timestamp="1583257558851" />
+    <state width="1638" height="165" key="GridCell.Tab.0.right/0.23.1680.952@0.23.1680.952" timestamp="1583251522712" />
+    <state width="1638" height="165" key="GridCell.Tab.0.right/0.23.1680.956@0.23.1680.956" timestamp="1583330032173" />
+    <state width="1638" height="165" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1583361341770" />
+    <state width="1638" height="2" key="GridCell.Tab.1.bottom" timestamp="1585578267524">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="2" key="GridCell.Tab.1.bottom/0.23.1680.941@0.23.1680.941" timestamp="1585487187654" />
+    <state width="1638" height="2" key="GridCell.Tab.1.bottom/0.23.1680.944@0.23.1680.944" timestamp="1585578267524" />
+    <state width="1638" height="2" key="GridCell.Tab.1.center" timestamp="1585578267524">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="2" key="GridCell.Tab.1.center/0.23.1680.941@0.23.1680.941" timestamp="1585487187653" />
+    <state width="1638" height="2" key="GridCell.Tab.1.center/0.23.1680.944@0.23.1680.944" timestamp="1585578267524" />
+    <state width="1638" height="2" key="GridCell.Tab.1.left" timestamp="1585578267524">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="2" key="GridCell.Tab.1.left/0.23.1680.941@0.23.1680.941" timestamp="1585487187652" />
+    <state width="1638" height="2" key="GridCell.Tab.1.left/0.23.1680.944@0.23.1680.944" timestamp="1585578267524" />
+    <state width="1638" height="2" key="GridCell.Tab.1.right" timestamp="1585578267524">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state width="1638" height="2" key="GridCell.Tab.1.right/0.23.1680.941@0.23.1680.941" timestamp="1585487187654" />
+    <state width="1638" height="2" key="GridCell.Tab.1.right/0.23.1680.944@0.23.1680.944" timestamp="1585578267524" />
+    <state x="519" y="327" key="com.intellij.ide.util.TipDialog" timestamp="1591435134796">
+      <screen x="0" y="23" width="1680" height="941" />
+    </state>
+    <state x="519" y="327" key="com.intellij.ide.util.TipDialog/0.23.1680.941@0.23.1680.941" timestamp="1591435134796" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1583331140131">
+      <screen x="0" y="23" width="1680" height="958" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.23.1680.958@0.23.1680.958" timestamp="1583331140131" />
+    <state x="505" y="227" width="670" height="669" key="search.everywhere.popup" timestamp="1583176572270">
+      <screen x="0" y="23" width="1680" height="944" />
+    </state>
+    <state x="505" y="227" width="670" height="669" key="search.everywhere.popup/0.23.1680.944@0.23.1680.944" timestamp="1583176572270" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lab1$bidijkstra.coverage" NAME="bidijkstra Coverage Results" MODIFIED="1585411236805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$test.coverage" NAME="astar Coverage Results" MODIFIED="1583351974819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$file1.coverage" NAME="file1 Coverage Results" MODIFIED="1581888238527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../smth" />
+    <SUITE FILE_PATH="coverage/lab1$astar.coverage" NAME="astar Coverage Results" MODIFIED="1585485716201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab1$graph_class.coverage" NAME="graph_class Coverage Results" MODIFIED="1591435581332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
