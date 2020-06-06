@@ -15,31 +15,22 @@ graph = np.array([
 G = nx.from_numpy_matrix(np.array(graph), create_using=nx.Graph)
 color_map = []
 
-def show_graph_with_labels(graph):
-    G = nx.from_numpy_matrix(np.array(graph), create_using=nx.Graph)
+def show_graph_with_labels():
     labels = nx.get_edge_attributes(G, 'weight')
     pos = nx.circular_layout(G)
     for n in G.nodes():
         color_map.append('purple')
     nx.draw_networkx_edge_labels(G, pos=pos, edge_labels=labels)
-    nx.draw_circular(G,node_color=color_map, with_labels=True, edge_labels=True)
+    nx.draw_circular(G, node_color=color_map, with_labels=True, edge_labels=True)
+    plt.show()
+
+def show_changed_color_graph():
+    labels = nx.get_edge_attributes(G, 'weight')
+    pos = nx.circular_layout(G)
+    nx.draw_networkx_edge_labels(G, pos=pos, edge_labels=labels)
+    nx.draw_circular(G, node_color=color_map, with_labels=True, edge_labels=True)
     plt.show()
     return G
-
-
-def show_result_bfs(graph, source):
-    path = bfs_algo_1(graph, source)
-    Graph = show_graph_with_labels(graph)
-    colors = [i / len(path) for i in path]
-    for i in path:
-        labels = nx.get_edge_attributes(Graph, "weight")
-        nx.draw_networkx_edge_labels(Graph, pos=nx.circular_layout(Graph), edge_labels=labels)
-        nx.draw_circular(Graph, node_color=colors, with_labels=True, edge_labels=True)
-    plt.show()
-
-
-
-
 
 def color_change(c, number):
     counter = 0
@@ -49,7 +40,7 @@ def color_change(c, number):
 
 
 def bfs_algo_1(graph, source):
-    show_graph_with_labels(graph)
+    show_graph_with_labels()
     visited = []
     queue = []
     queue.append(source)
@@ -57,6 +48,8 @@ def bfs_algo_1(graph, source):
     while queue:
         vis = queue[0]
         print(vis)
+        color_change('red', vis)
+        show_changed_color_graph()
         queue.pop(0)
         for i in range(graph.shape[0]):
             if graph[vis][i] != 0 and i not in visited:
@@ -70,8 +63,12 @@ vis_for_print = []
 
 
 def dfs_algo(graph, ver, visited):
+    if ver == 0:
+        show_graph_with_labels()
     vis_for_print.append(ver)
     print(ver)
+    color_change('red', ver)
+    show_changed_color_graph()
     visited[ver] = True
     for i in range(graph.shape[0]):
         if graph[ver][i] != 0 and visited[i] is False:
@@ -79,25 +76,14 @@ def dfs_algo(graph, ver, visited):
     return vis_for_print
 
 
-def show_dfs_resuls(graph, source):
-    show_graph_with_labels(graph)
-    path = dfs_algo(graph, source, visited)
-    print(path)
-    Graph = show_graph_with_labels(graph)
-    colors = [i / len(path) for i in path]
-    for i in path:
-        nx.draw_circular(Graph, node_color=colors, with_labels=True, edge_labels=True)
-    plt.show()
-
-
 def min_key_Prima(graph, key, MST):
-    min = 1000  # like maxint
+    minimum = 1000  # like maxint
     for v in range(graph.shape[0]):
-        if key[v] < min and MST[v] is False:
-            min = key[v]
-            min_index = v
+        if key[v] < minimum and MST[v] is False:
+            minimum = key[v]
+            minimum_index = v
 
-    return min_index
+    return minimum_index
 
 
 def print_MST(graph, parent):
@@ -225,9 +211,11 @@ def FordFulkerson(graph, source, sink):
     return max_flow
 
 
-#show_result_bfs(graph, 0)
 # Dijkstra(graph,0)
-# show_dfs_resuls(graph,0)
+#show_dfs_resuls(graph,0)
 # Prima(graph)
 #print(FordFulkerson(graph, 0, 3))
-show_graph_with_labels(graph)
+#show_graph_with_labels(graph)
+
+#bfs_algo_1(graph, 0)
+dfs_algo(graph, 0 , visited)
