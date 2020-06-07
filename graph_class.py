@@ -77,7 +77,7 @@ def dfs_algo(graph, ver, visited):
 
 
 def min_key_Prima(graph, key, MST):
-    minimum = 1000  # like maxint
+    minimum = float('Inf')  # like maxint
     for v in range(graph.shape[0]):
         if key[v] < minimum and MST[v] is False:
             minimum = key[v]
@@ -114,23 +114,27 @@ def new_print(graph, parent):
     for i in range(new_graph.shape[0]):
         new_graph[parent[i], i] = int(graph[i][parent[i]])
         new_graph[i, parent[i]] = int(graph[i][parent[i]])
-    # np.nditer(prima_graph, op_flags=['readwrite'])
-    print(new_graph)
-    show_graph_with_labels(new_graph)
+    #print(new_graph)
+    new_G = nx.from_numpy_matrix(np.array(new_graph), create_using=nx.Graph)
+    labels = nx.get_edge_attributes(new_G, 'weight')
+    pos = nx.circular_layout(new_G)
+    for n in new_G.nodes():
+        color_map.append('magenta')
+    nx.draw_networkx_edge_labels(new_G, pos=pos, edge_labels=labels)
+    nx.draw_circular(new_G, node_color=color_map, with_labels=True, edge_labels=True)
+    plt.show()
+
 
 
 def print_dij_solution(graph, dist, par_edges):
-    Graph = show_graph_with_labels(graph)
-    # color_edge = [(par_edges[i], i) for i in range(1, graph.shape[0]) for i in range(1, graph.shape[0])]
     color_edge_tuples = []
-    color_edge_map = []
     for vertex in range(graph.shape[0]):
         print(vertex, "\t", dist[vertex])
     for i in range(1, graph.shape[0]):
         color_edge_tuples.append((par_edges[i], i))
-    color_edge_map = ['magenta' if e in color_edge_tuples else 'black' for e in G.edges]
-    print(par_edges[i], "-", i, "\t", graph[i][par_edges[i]])
-    nx.draw_networkx_edges(Graph, pos=nx.circular_layout(Graph),
+        print(par_edges[i], "-", i, "\t", graph[i][par_edges[i]])
+    color_edge_map = ['green' if e in color_edge_tuples else 'white' for e in G.edges]
+    nx.draw_networkx_edges(G, pos=nx.circular_layout(G),
                            edgelist=G.edges, edge_color=color_edge_map)
     new_print(graph, par_edges)
 
@@ -168,7 +172,7 @@ def bfs_algo_2(graph, source, sink, parent):
     queue = []
     queue.append(source)
     visited.append(source)
-    # color_change('r', source)
+    color_change('r', source)
     while queue:
         vis = queue[0]
         queue.pop(0)
@@ -176,14 +180,16 @@ def bfs_algo_2(graph, source, sink, parent):
             if graph[vis][i] != 0 and i not in visited:
                 queue.append(i)
                 visited.append(i)
-                # color_change('r', i)
+                color_change('r', i)
+                show_changed_color_graph()
                 parent[i] = vis
+
     print(visited)
     return True if sink in visited else False
 
 
 def FordFulkerson(graph, source, sink):
-    show_graph_with_labels(graph)
+    show_graph_with_labels()
     parent = [-1] * graph.shape[1]
     max_flow = 0
     while bfs_algo_2(graph, source, sink, parent):
@@ -197,25 +203,20 @@ def FordFulkerson(graph, source, sink):
         v = sink
         while v != source:
             u = parent[v]
-            color_change('r', v)
-            color_change('r', u)
+            color_change('b', v)
+            color_change('b', u)
             graph[u][v] -= path_flow
             graph[v][u] -= path_flow
             v = parent[v]
-        G = nx.from_numpy_matrix(np.array(graph), create_using=nx.Graph)
-        labels = nx.get_edge_attributes(G, 'weight')
-        pos = nx.circular_layout(G)
-        nx.draw_networkx_edge_labels(G, pos=pos, edge_labels=labels)
-        nx.draw_circular(G,node_color=color_map, with_labels=True, edge_labels=True)
-        plt.show()
+        show_changed_color_graph()
     return max_flow
 
 
-# Dijkstra(graph,0)
-#show_dfs_resuls(graph,0)
-# Prima(graph)
-#print(FordFulkerson(graph, 0, 3))
-#show_graph_with_labels(graph)
 
 #bfs_algo_1(graph, 0)
-dfs_algo(graph, 0 , visited)
+#dfs_algo(graph, 0 , visited)
+#show_graph_with_labels()
+#Prima(graph)
+#Dijkstra(graph,0)
+#print(FordFulkerson(graph, 0, 3))
+
