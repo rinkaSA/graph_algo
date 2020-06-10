@@ -3,17 +3,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 graph = np.array([
-    [0, 2, 5, 0, 0, 0],
-    [2, 0, 4, 8, 0, 0],
-    [5, 4, 0, 10, 3, 0],
-    [0, 8, 10, 0, 0, 5],
-    [0, 0, 3, 0, 0, 0],
-    [0, 0, 0, 5, 0, 0]
+    [0, 20, 12, 0, 0, 0, 0, 0, 0, 0],
+    [20, 0, 12, 9, 20, 0, 0, 0, 0, 0],
+    [12, 12, 0, 20, 0, 0, 20, 7, 0, 0],
+    [0, 9, 20, 0, 0, 0, 2, 18, 0, 0],
+    [0, 20, 0, 0, 0, 10, 0, 0, 10, 18],
+    [0, 0, 0, 0, 10, 0, 1, 0, 20, 18],
+    [0, 0, 20, 2, 0, 1, 0, 7, 16, 0],
+    [0, 0, 7, 18, 0, 0, 7, 0, 17, 0],
+    [0, 0, 0, 0, 10, 20, 16, 17, 0, 8],
+    [0, 0, 0, 0, 18, 18, 0, 0, 8, 0]
 ]
 )
 
 G = nx.from_numpy_matrix(np.array(graph), create_using=nx.Graph)
 color_map = []
+
 
 def show_graph_with_labels():
     labels = nx.get_edge_attributes(G, 'weight')
@@ -24,6 +29,7 @@ def show_graph_with_labels():
     nx.draw_circular(G, node_color=color_map, with_labels=True, edge_labels=True)
     plt.show()
 
+
 def show_changed_color_graph():
     labels = nx.get_edge_attributes(G, 'weight')
     pos = nx.circular_layout(G)
@@ -31,6 +37,7 @@ def show_changed_color_graph():
     nx.draw_circular(G, node_color=color_map, with_labels=True, edge_labels=True)
     plt.show()
     return G
+
 
 def color_change(c, number):
     counter = 0
@@ -114,16 +121,15 @@ def new_print(graph, parent):
     for i in range(new_graph.shape[0]):
         new_graph[parent[i], i] = int(graph[i][parent[i]])
         new_graph[i, parent[i]] = int(graph[i][parent[i]])
-    #print(new_graph)
-    new_G = nx.from_numpy_matrix(np.array(new_graph), create_using=nx.Graph)
-    labels = nx.get_edge_attributes(new_G, 'weight')
-    pos = nx.circular_layout(new_G)
-    for n in new_G.nodes():
+    # print(new_graph)
+    new_g = nx.from_numpy_matrix(np.array(new_graph), create_using=nx.Graph)
+    labels = nx.get_edge_attributes(new_g, 'weight')
+    pos = nx.circular_layout(new_g)
+    for n in new_g.nodes():
         color_map.append('magenta')
-    nx.draw_networkx_edge_labels(new_G, pos=pos, edge_labels=labels)
-    nx.draw_circular(new_G, node_color=color_map, with_labels=True, edge_labels=True)
+    nx.draw_networkx_edge_labels(new_g, pos=pos, edge_labels=labels)
+    nx.draw_circular(new_g, node_color=color_map, with_labels=True, edge_labels=True)
     plt.show()
-
 
 
 def print_dij_solution(graph, dist, par_edges):
@@ -140,10 +146,10 @@ def print_dij_solution(graph, dist, par_edges):
 
 
 def minDistance(graph, dist, vis_vertex):
-    min = 1000
+    mini = 1000
     for v in range(graph.shape[0]):
-        if dist[v] < min and vis_vertex[v] is False:
-            min = dist[v]
+        if dist[v] < mini and vis_vertex[v] is False:
+            mini = dist[v]
             min_index = v
     return min_index
 
@@ -166,7 +172,6 @@ def Dijkstra(graph, root):
     print_dij_solution(graph, dist, par_edges)
 
 
-
 def bfs_algo_2(graph, source, sink, parent):
     visited = []
     queue = []
@@ -181,7 +186,7 @@ def bfs_algo_2(graph, source, sink, parent):
                 queue.append(i)
                 visited.append(i)
                 color_change('r', i)
-                show_changed_color_graph()
+                #show_changed_color_graph()
                 parent[i] = vis
 
     print(visited)
@@ -193,30 +198,32 @@ def FordFulkerson(graph, source, sink):
     parent = [-1] * graph.shape[1]
     max_flow = 0
     while bfs_algo_2(graph, source, sink, parent):
-        # print(parent)
+        print(parent)
         path_flow = float("Inf")
         s = sink
         while s != source:
+            color_change('b', s)
             path_flow = min(path_flow, graph[parent[s]][s])
             s = parent[s]
+            color_change('b', s)
+            show_changed_color_graph()
+        color_change('b',source)
+        show_changed_color_graph()
+        for i in G.nodes:
+            color_change('purple',i)
+        show_changed_color_graph()
         max_flow += path_flow
         v = sink
         while v != source:
             u = parent[v]
-            color_change('b', v)
-            color_change('b', u)
             graph[u][v] -= path_flow
             graph[v][u] -= path_flow
             v = parent[v]
-        show_changed_color_graph()
+        print(max_flow)
     return max_flow
-
-
-
 #bfs_algo_1(graph, 0)
 #dfs_algo(graph, 0 , visited)
 #show_graph_with_labels()
 #Prima(graph)
 #Dijkstra(graph,0)
 #print(FordFulkerson(graph, 0, 3))
-
